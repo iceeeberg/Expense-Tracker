@@ -1,0 +1,49 @@
+<!DOCTYPE html> <html>
+  <head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2>Expense Tracker</h2>
+      <div id="form">
+      <form id="expense">
+        <label for="amount">Enter Amount:</label>
+          <input id = "amount" type="number" placeholder="Enter Amount..">
+        <label for="date">Enter Date:</label>
+          <input id = "date" type="date">
+        <label for ="location">Enter Location:</label>
+          <input id="location" type="text" placeholder="Enter Location..">
+        <label for="description">Enter Description:</label>
+          <input id ="description" type="text"placeholder="Enter Description..">
+        <br>
+          <input id="submit" type="button" value="Submit Expense">
+      </form>
+      </div>
+
+        <br>
+
+        <div id="table">
+        <center>
+          <table id="costs">
+              <thead>
+             <tr>   
+              <th style="width:200px;">Amount</th>
+              <th style="width:200px;">Date</th>
+              <th style="width:200px;">Location</th>
+              <th style="width:200px;">Description</th>
+            </tr>
+              </thead>
+          </table>
+       </center>
+        </div>
+
+      <br>
+
+      <center><input type="button" value="Delete One Row" onclick="document.getElementById('costs').deleteRow(0)"
+      </center>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
