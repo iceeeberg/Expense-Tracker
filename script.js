@@ -14,26 +14,21 @@ function displayExpense(){
       return false; 
     };
 
-    const costs = document.getElementById('costs');
-    const delteBtn = document.createElement("button");
+    const tableRow = document.createElement('tr');
+    
+    tableRow.appendChild(amount);
+    amount.value = "";
 
-    let newRow = costs.insertRow(row);
-    let newAmount = newRow.insertCell(0);
-    let newDate = newRow.insertCell(1);
-    let newLocation = newRow.insertCell(2);
-    let newDescription = newRow.insertCell(3);
-   
-    newAmount.textContent = amount;
-    newDate.textContent= date;
-    newLocation.textContent = location;
-    newDescription.textContent = description;
+    tableRow.appendChild(date);
+    date.value = "";
 
-    row++;
-  };
+    tableRow.appendChild(amount);
+    location.value = "";
 
-  
- 
-
+    tableRow.appendChild(amount);
+    description.value = "";
+    
+  }
 
 
 
