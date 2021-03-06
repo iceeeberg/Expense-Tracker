@@ -4,10 +4,10 @@ const submitExpense = document.getElementById('submit');
 submitExpense.addEventListener("click", displayExpense);
 
 function displayExpense(){
-    let amount = document.getElementById('amount').value;
-    let date = document.getElementById('date').value;
-    let location = document.getElementById('location').value;
-    let description = document.getElementById('description').value;
+    let amount = document.getElementById('amount')
+    let date = document.getElementById('date')
+    let location = document.getElementById('location')
+    let description = document.getElementById('description')
 
     if(!amount || !date || !location || !description ){
       alert("Please complete your entry");
@@ -16,17 +16,22 @@ function displayExpense(){
 
     const tableRow = document.createElement('tr');
     
-    tableRow.appendChild(amount);
-    amount.value = "";
+    const newAmount = document.createElement('td');
+    newAmount.textContent = amount
+    tableRow.appendChild(newAmount);
 
-    tableRow.appendChild(date);
-    date.value = "";
+    const newDate = document.createElement('td');
+    newDate.textContent = date
+    tableRow.appendChild(newDate);
 
-    tableRow.appendChild(amount);
-    location.value = "";
+    const newLocation = document.createElement('td');
+    newLocation.textContent = location
+    tableRow.appendChild(newLocation);
 
-    tableRow.appendChild(amount);
-    description.value = "";
+    const newDescription = document.createElement('td');
+    newDescription.textContent = description
+    tableRow.appendChild(newDescription);
+
     
   }
 
