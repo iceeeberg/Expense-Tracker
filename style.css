@@ -53,3 +53,20 @@ th{
   text-align: left;
   background-color: yellow;
 }
+
+tr{
+  border: 3px solid darkorange;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: yellow;
+  border-collapse: collapse;
+}
+
+button{
+  background-color:red;
+  color: white;
+  display: inline-flex;
+  border-radius: 36px;
+  font-style: initial;
+  float: right;
+}

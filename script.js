@@ -15,35 +15,33 @@ function displayExpense(){
     const table = document.getElementById('costs');
     const tableRow = document.createElement('tr');
     
+    table.appendChild(tableRow);
+
     const newAmount = document.createElement('td');
     newAmount.textContent = amount
-    inputAmount = table + tableRow.appendChild(newAmount);
+    tableRow.appendChild(newAmount);
     
-
     const newDate = document.createElement('td');
     newDate.textContent = date
-    inputDate = table + tableRow.appendChild(newDate);
+    tableRow.appendChild(newDate);
     
-
     const newLocation = document.createElement('td');
     newLocation.textContent = location
-    inputLocation = table + tableRow.appendChild(newLocation);
+    tableRow.appendChild(newLocation);
     
-
     const newDescription = document.createElement('td');
     newDescription.textContent = description
-    inputDescription = table + tableRow.appendChild(newDescription);
+    tableRow.appendChild(newDescription);
     
+    const deleteButton = document.createElement('button');
+    deleteButton.innerText = 'X'
+    newDescription.appendChild(deleteButton);
+    
+    deleteButton.addEventListener('click', () => {
+      table.removeChild(tableRow);
+    })
+    
+}
 
   
-    
-    };
-
-
-
-
-
-
-
-
   
