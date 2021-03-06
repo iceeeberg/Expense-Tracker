@@ -2,7 +2,7 @@
 
 An expense tracker created with HTML, CSS, and JavaScript without the use of React.
 
-### Try it out [Here] (https://iceeeberg.github.io/Expense-Tracker/)
+### Try it out [Here](https://iceeeberg.github.io/Expense-Tracker/)
 
 ![expense Tracker](expense_tracker.png)
 
