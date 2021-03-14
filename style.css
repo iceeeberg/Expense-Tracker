@@ -45,19 +45,18 @@ form{
 
 table{
   border-collapse: collapse;
+  text-align: center;
 }
 
 th{
   border: 3px solid darkorange;
   padding: 0.5rem;
-  text-align: left;
   background-color: yellow;
 }
 
 tr{
   border: 3px solid darkorange;
   padding: 0.5rem;
-  text-align: left;
   background-color: yellow;
   border-collapse: collapse;
 }
