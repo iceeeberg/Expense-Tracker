@@ -13,4 +13,4 @@ The application combined all the basic knowledge I have learned about how JavaSc
 
 ## Author 
 
-Dante Leeseberg - Full Stack Sofware Developer [LinkedIn](https://www.linkedin.com/in/dante-leeseberg-bba05883/)
+Dante Leeseberg - Full Stack Sofware Developer [LinkedIn](https://www.linkedin.com/in/dante-leeseberg-bba05883/) | [Website](https://www.danteleeseberg.com/)
